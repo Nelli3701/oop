@@ -8,7 +8,7 @@ public abstract class WildAnimal extends Animal{
     }
     @Override
     public String toString() {
-        return super.toString() + "место обитания: " + area + "дата нахождения: " + dateFound;}
+        return super.toString() + "\nместо обитания: " + area + "\nдата нахождения: " + dateFound;}
 
 
 }

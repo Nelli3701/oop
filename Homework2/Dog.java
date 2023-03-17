@@ -22,6 +22,6 @@ public class Dog extends Pet implements Train {
     }
     @Override
     public String toString() {
-        return super.toString() + "наличие дрессировки: " + havingTraining;
+        return super.toString() + "\nналичие дрессировки: " + havingTraining;
     }
 }

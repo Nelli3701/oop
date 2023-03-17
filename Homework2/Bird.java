@@ -10,6 +10,6 @@ public abstract class Bird extends Animal implements Fly{
         }
     @Override
     public String toString() {
-        return super.toString() + "высота полёта: " + flightAttitude;
+        return super.toString() + "\nвысота полёта: " + flightAttitude;
     }
 }

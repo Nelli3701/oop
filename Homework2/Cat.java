@@ -13,7 +13,7 @@ public class Cat extends Pet{
 
     @Override
     public String toString() {
-        return super.toString() + "наличие шерсти: " + havingWool;
+        return super.toString() + "\nналичие шерсти: " + havingWool;
     }
 
     @Override

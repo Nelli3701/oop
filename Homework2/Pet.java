@@ -14,7 +14,7 @@ public abstract class Pet extends Animal implements ShowAffection {
     }
     @Override
     public String toString() {
-        return super.toString() + "кличка: " + petName + "порода: " + kind +
-                "наличие прививок :" + vaccination + "цвет шерсти: " + woolColour + "дата рождения: " + birthday;
+        return super.toString() + "\nкличка: " + petName + "\nпорода: " + kind +
+                "\nналичие прививок :" + vaccination + "\nцвет шерсти: " + woolColour + "\nдата рождения: " + birthday;
     }
 }

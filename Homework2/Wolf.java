@@ -11,6 +11,6 @@ public class Wolf extends WildAnimal{
     }
     @Override
     public String toString() {
-        return super.toString() + "вожак стаи: " + leader;
+        return super.toString() + "\nвожак стаи: " + leader;
     }
 }
