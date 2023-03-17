@@ -11,8 +11,7 @@ public abstract class Animal {
     public abstract void makeSound();
     @Override
     public String toString() {
-        return "рост: " + height + "" +
-                "\nвес: " + weight + "\nцвет глаз: " + eyesColour;
+        return "рост: " + height + "\nвес: " + weight + "\nцвет глаз: " + eyesColour;
     }
 
 }
