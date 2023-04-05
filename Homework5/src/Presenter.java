@@ -1,19 +1,17 @@
 import java.util.Scanner;
 
 public class Presenter {
-    ConsoleView view;
-    Model model;
+    private View view;
+    private Model model;
 
-    public Presenter(Model m, ConsoleView v) {
+    public Presenter(Model m, View v) {
         model = m;
-        view = v;
-        view.setPresenter(this);
-        model.setPresenter(this);
+        this.view = v;
+//        view.setPresenter(this);
+//        model.setPresenter(this);
     }
-    public boolean add() {
-        System.out.println("\nВведите текст заметки:");
-        Scanner scanner = new Scanner(System.in);
-        Notebook.add(scanner.nextLine());
+    public void add() {
+        model.add(view.getNote());
     }
 
 }
