@@ -10,8 +10,30 @@ public class Presenter {
 //        view.setPresenter(this);
 //        model.setPresenter(this);
     }
-    public void add() {
-        model.add(view.getNote());
+    public void start() {
+
+        while (true) {
+
+            view.showOutput("\nВыберите действие:\n1. Добавить заметку\n2. Показать все заметки\n3. Выход");
+            String choice = view.getInput();
+
+            switch (choice) {
+                case "1":
+                    System.out.printf("Ваша заметка: ");
+                    model.add(view.getInput());
+                    break;
+                case "2":
+                    model.getNotes();
+                    break;
+                case "3":
+                    view.showOutput("Блокнот закрыт");
+                    System.exit(0);
+                    break;
+                default:
+                    view.showOutput("Недопустимый выбор");
+            }
+        }
+
     }
 
 }
