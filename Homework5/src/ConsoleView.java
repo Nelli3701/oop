@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class ConsoleView implements View {
-    //private Presenter presenter;
     private Scanner scanner;
    public ConsoleView() {
        scanner = new Scanner(System.in);
@@ -14,8 +13,4 @@ public class ConsoleView implements View {
     public String getInput(){
         return scanner.nextLine();
     }
-//    @Override
-//    public void setPresenter(Presenter presenter) {
-//        this.presenter = presenter;
-//    }
 }

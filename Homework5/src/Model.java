@@ -12,6 +12,7 @@ public class Model {
         if (!notes.contains(note)) {
             notes.add(note);
             flag = true;
+            System.out.println("Заметка добавлена");
         }
         return flag;
     }
