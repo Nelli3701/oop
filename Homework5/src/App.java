@@ -13,7 +13,9 @@ public class App {
 
                 switch (choice) {
                     case "1":
+                        view.showOutput("Ваша заметка: ");
                         presenter.add();
+                        view.showOutput("Заметка добавлена");
                         break;
                     case "2":
                         System.out.println(presenter.getNotes());

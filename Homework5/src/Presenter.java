@@ -8,9 +8,9 @@ public class Presenter {
     }
 
     public void add() {
-        System.out.printf("Ваша заметка: ");
-        model.add(view.getInput());
+       model.add(view.getInput());
     }
+
     public String getNotes() {
         return model.getNotes();
     }
