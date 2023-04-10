@@ -20,7 +20,9 @@ public class ConsoleView implements View {
     }
     @Override
     public String getInput(){
-        return scanner.nextLine();
+       scanner.nextLine();
+      String line = scanner.nextLine();
+     return line;
     }
     @Override
     public void onClick() {

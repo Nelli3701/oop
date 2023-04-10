@@ -8,7 +8,7 @@ public class Presenter {
     }
 
     public void add() {
-       model.add(view.getInput());
+        model.add(view.getInput());
     }
 
     public String getNotes() {

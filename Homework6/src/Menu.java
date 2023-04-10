@@ -6,9 +6,9 @@ public class Menu {
 
     public Menu(ConsoleView console) {
         commands = new ArrayList<>();
-        //commands.add(new PrintAll(console));
         commands.add(new AddNote(console));
-        //commands.add(new Exit(console));
+        commands.add(new PrintAll(console));
+        commands.add(new Finish(console));
     }
 
     public String printMenu(){
