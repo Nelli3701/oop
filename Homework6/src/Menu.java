@@ -23,11 +23,6 @@ public class Menu {
         }
         return stringBuilder.toString();
     }
-
-    public int getSizeMenu(){
-        return commands.size();
-    }
-
     void execute(int num){
         Command option = commands.get(num);
         option.execute();
