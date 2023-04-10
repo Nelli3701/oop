@@ -5,8 +5,10 @@ public class ConsoleView implements View {
     private Presenter presenter;
     private boolean workNotebook;
     private Menu menu;
-    View view = new ConsoleView();
     Model model = new Model();
+ public ConsoleView() {
+     scanner = new Scanner(System.in);
+    }
 
     @Override
     public void setPresenter(Presenter presenter) {
@@ -28,7 +30,7 @@ public class ConsoleView implements View {
             printMenu();
             System.out.print("Выберите пункт меню: ");
             int choice = scanner.nextInt();
-            menu.execute(choice);
+            menu.execute(choice-1);
             }
         while (workNotebook);
     }
@@ -44,9 +46,9 @@ public class ConsoleView implements View {
     }
 
     public void addNote() {
-        view.showOutput("Ваша заметка: ");
+        showOutput("Ваша заметка: ");
         presenter.add();
-        view.showOutput("Заметка добавлена");
+        showOutput("Заметка добавлена");
     }
     public void getNotes() {
         System.out.println(presenter.getNotes());
