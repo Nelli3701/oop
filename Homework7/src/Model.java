@@ -18,16 +18,11 @@ public class Model {
 
     //получить записи
     public String getNotes() {
-        if (notes.size() == 0) {
-            return "Блокнот пуст";
-        } else {
-            System.out.println("\nБлокнот заметок:");
             String result = "";
             for (Note note : notes) {
                 result += note + "\n";
             }
             return result;
-        }
     }
 
     //изменить запись

@@ -12,8 +12,13 @@ public class Presenter {
     }
 
     public String getNotes() {
-        return model.getNotes();
-    }
+        String list = model.getNotes();
+        if (list.equals("")) {
+            return "Блокнот пуст";
+        } else {
+            return ("\nБлокнот заметок:\n" + list);
+        }
+        }
     public void update(int index, String note) {
         model.update(index, new Note(note));
     }

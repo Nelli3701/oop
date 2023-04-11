@@ -5,7 +5,6 @@ public class ConsoleView implements View {
     private Presenter presenter;
     private boolean workNotebook;
     private Menu menu;
-    Model model = new Model();
  public ConsoleView() {
      scanner = new Scanner(System.in);
     }
@@ -14,14 +13,14 @@ public class ConsoleView implements View {
     public void setPresenter(Presenter presenter) {
         this.presenter = presenter;
     }
-   @Override
+    @Override
     public void showOutput(String output) {
         System.out.println(output);
     }
     @Override
     public String getInput(){
-       scanner.nextLine();
-      String line = scanner.nextLine();
+     scanner.nextLine();
+     String line = scanner.nextLine();
      return line;
     }
     @Override
@@ -51,6 +50,7 @@ public class ConsoleView implements View {
         presenter.add();
         showOutput("Заметка добавлена");
     }
+
     public void getNotes() {
         System.out.println(presenter.getNotes());
     }
