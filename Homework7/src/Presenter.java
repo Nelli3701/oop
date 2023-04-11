@@ -15,8 +15,7 @@ public class Presenter {
         return model.getNotes();
     }
     public void update(int index, String note) {
-
-        model.update(index, note);
+        model.update(index, new Note(note));
     }
     public void remove(int index) {
         model.remove(index);

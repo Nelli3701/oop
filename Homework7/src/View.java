@@ -3,6 +3,4 @@ public interface View {
     public String getInput();
     void setPresenter(Presenter presenter);
     void onClick();
-    String getNote();
-    //void setNode(String value);
 }

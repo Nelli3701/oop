@@ -37,17 +37,6 @@ public class ConsoleView implements View {
         while (workNotebook);
     }
 
-    @Override
-    public String getNote() {
-        return scanner.nextLine();
-    }
-
-//    @Override
-//    public void setNode(String value) {
-//
-//    }
-
-
     public void printMenu() {
         System.out.println(menu.printMenu());
     }
@@ -72,7 +61,6 @@ public class ConsoleView implements View {
         showOutput("Новый текст заметки: ");
         scanner.nextLine();
         String newNote = scanner.nextLine();
-        Note note = new Note(newNote);
         presenter.update(choice, newNote);
     }
     public void removeNote() {
